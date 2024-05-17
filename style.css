@@ -24,6 +24,7 @@
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -128,7 +129,7 @@ ul li a:hover {
 
 /*social-links*/
 
-#social-links{
+#social-links {
   display: flex;
   justify-content: center;
   gap: 32px;
@@ -136,3 +137,13 @@ ul li a:hover {
   font-size: 20px;
 }
 
+/* media queries*/
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./imagens/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./imagens/bg-desktop-light.jpg);
+  }
+}
